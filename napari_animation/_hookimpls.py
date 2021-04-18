@@ -4,4 +4,4 @@ from ._qt import AnimationWidget
 
 @napari_hook_implementation
 def napari_experimental_provide_dock_widget():
-    return AnimationWidget
+    return (AnimationWidget, {'name': 'Wizard'})

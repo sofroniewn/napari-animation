@@ -1,5 +1,5 @@
 from pathlib import Path
-from qtpy.QtWidgets import QWidget, QLabel, QVBoxLayout, QPushButton, QFileDialog, QErrorMessage, QSlider
+from qtpy.QtWidgets import QWidget, QVBoxLayout, QPushButton, QFileDialog, QErrorMessage, QSlider
 from qtpy.QtCore import Qt
 
 from ..animation import Animation
@@ -48,8 +48,6 @@ class AnimationWidget(QWidget):
         """Initialise user interface"""
         self._layout = QVBoxLayout()
         self.setLayout(self._layout)
-
-        self._layout.addWidget(QLabel('Animation Wizard', parent=self))
 
         self._init_keyframes_list_control_widget()
         self._init_keyframes_list_widget()
